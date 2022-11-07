@@ -14,7 +14,7 @@ sidebar_position: 2
 - **[Jquery-confirm](https://craftpip.github.io/jquery-confirm/)** (v3.3.2)
 - **[MDB datatables](https://mdbootstrap.com/docs/b4/jquery/tables/datatables/)** 
 - **[Notyf js](https://github.com/caroso1222/notyf)** (v3.10)
-- **[PDF tk](https://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/)** (vx.x)
+- **[PDF tk](https://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/)**
 
 ## Structure de l'application
 
@@ -23,9 +23,9 @@ sidebar_position: 2
     ├── Http/
         ├── Controllers/
             ├── Auth/ # Folder contenant la logique de Laravel Breeze
-            ├── OpcoController.php
-            ├── Principal.php
-    ├── Models/ 
+            ├── DashboardController.php # contient les méthodes liée a la partie admin
+            ├── PrincipalController.php # contient les méthode liée au formulaire de saisies
+    ├── Models/ # Classe de l'applications
 |
 ├── public/
     ├── css/
@@ -37,20 +37,24 @@ sidebar_position: 2
         ├── Jquery-confirm/
         ├── MDB/
         ├── Notyf/
+        ├── pdftk/
+        ├── Select2/
 ├── ressources/
     ├── view/
         ├── auth/ # Folder contenant les vues de Laravel Breeeze
         ├── components/ # Folder contenant les components réalisé par Laravel Breeze
+        ├── dashboard # Contient les vues de la partie admin
         ├── layout/ # Folder contenant les layout réalisé par Laravel Breeze puis modifer
             ├── app.blade.php
             ├── guest.blade.php
             ├── navbar.blade.php
-        ├── vendor # Template des mails markdown utilisée
+        ├── vendor # Template des mails markdown utilisée pour la renitialisation des mots de passe
 ├── routes/
     ├── auth.php # route utilisée par Laravel Breeze
     ├── web.php # route applications
 ├── storage/
     ├── app/
+        ├── pdf/ # folder contenant les templates pdf utilisée
 ├── tests/
     ├── Feature/ # Test l'ensemble des financements
 ```

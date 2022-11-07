@@ -8,16 +8,16 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const config = {
   title: "FormaDoc",
   tagline: "Documentation CFA Formasup HDF",
-  url: "https://your-docusaurus-test-site.com",
-  baseUrl: "/",
+  url: "https://toupartnathan.github.io/",
+  baseUrl: "/formadoc/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/formasuplogo.png",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "facebook", // Usually your GitHub org/user name.
-  projectName: "docusaurus", // Usually your repo name.
+  organizationName: "formasuphdf", // Usually your GitHub org/user name.
+  projectName: "formadoc", // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -36,8 +36,6 @@ const config = {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
         },
         blog: {
           showReadingTime: true,
@@ -71,7 +69,7 @@ const config = {
             label: "Documentation",
           },
           {
-            href: "https://github.com/facebook/docusaurus",
+            href: "https://github.com/formasuphdf",
             label: "GitHub",
             position: "right",
           },
@@ -87,22 +85,26 @@ const config = {
                 label: "Documentation",
                 to: "/docs/intro",
               },
+              {
+                label: "Annexe 3",
+                to: "/docs/annexe3/intro",
+              }
             ],
           },
           {
             title: "Community",
             items: [
               {
-                label: "Stack Overflow",
-                href: "https://stackoverflow.com/questions/tagged/docusaurus",
+                label: "Formasup HDF",
+                href: "https://www.formasup-npc.org/",
               },
               {
-                label: "Discord",
-                href: "https://discordapp.com/invite/docusaurus",
+                label: "MySup V1",
+                href: "https://www.mysup.fr/",
               },
               {
-                label: "Twitter",
-                href: "https://twitter.com/docusaurus",
+                label: "MySup V2 Recette",
+                href: "http://formasup-mysup2.rct.fractory.io",
               },
             ],
           },
@@ -111,7 +113,7 @@ const config = {
             items: [
               {
                 label: "GitHub",
-                href: "https://github.com/facebook/docusaurus",
+                href: "https://github.com/formasuphdf",
               },
             ],
           },
